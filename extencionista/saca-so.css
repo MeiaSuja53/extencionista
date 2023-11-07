@@ -1,0 +1,61 @@
+header {
+    background-color: aquamarine;
+    padding: 40px 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(68, 68, 68);
+}
+
+h1 {
+    font-size: 50px;
+    color: brown;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-style: bold;
+    font-size: 22px;
+    margin: 0 0 0 15px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+.login {
+    width:260px;
+    margin: 0px 1150px;
+    border:2px solid #000;  
+}
+
+nav a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+    padding: 34px 0;
+}
+
+.links {
+    padding: 20px;
+}
+
+footer {
+    background: url(.jpeg);
+    text-align: center;
+    padding: 40px 0;
+}
+
+p {
+    text-align: center;
+}
+
+.txt-rodape {
+    color: rgb(0, 0, 0);
+}
