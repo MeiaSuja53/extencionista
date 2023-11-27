@@ -112,7 +112,37 @@ nav ul a:not(.btn)::after {
 nav ul a:hover::after {
     width: 80%;
 }
+/*num sei*/
+@media(max-width:576px){
+    #main h1,#main h2{margin-top:1em;font-size:1.6em !important;}
+    #sobre ul{max-width:100%;}
+    .estatisticas{width:100%;}
+    .estatisticas .estatistica{width:calc(100% - 2.2em);margin-left:0;}
+    .estatisticas .titulo{width:42%;font-size:.8em;}
+    .estatisticas ul{width:56%;}
+    #tituloMapa,#subtituloMapa{font-size:.8em;}
+}
 
+@media(max-width:769px){
+    .estatisticas{width:100%;}
+    .estatisticas .estatistica{width:calc(100% - 2.2em);}
+    .estatisticas .titulo{width:67%;}
+    .estatisticas ul{width:32%;}
+}
+@media(max-width:992px){
+    .estatisticas .titulo{width:48%;}
+    .estatisticas ul{width:50%;}
+}
+.estatisticas{display:block;width:100%;}
+.estatisticas .estatistica{display:inline-block;width:calc(50% - 2.2em);min-height:500px;padding:0;margin:2em 1em 0 1em;border:1px solid #666;border-radius: 6px;}
+.estatisticas .estatistica>div{display:block;padding:.5em 1em .4em 1em;border-top:3px solid #f19b1f;border-bottom:1px solid #f9d7a5;border-radius:3px;font-size:1.2em}
+.estatisticas .titulo,.estatisticas ul{display:inline-block !important;}
+.estatisticas .inline li{display:inline-block;padding:0 .2em;}
+.estatisticas ul{width:42%;}
+.estatisticas .titulo{width:57%;color:#444;font-size:1.2em;cursor:default;}
+.estatisticas .estatistica table{width: 300px;}
+.estatisticas .estatistica h2{display: inline-block;width: auto;}
+.estatisticas .estatistica ul{margin:0;padding:0;}
 /*menu mobile*
 nav .menu-icon {
     cursor: pointer;

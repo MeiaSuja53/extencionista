@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--grafico-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,30 +48,25 @@
             </section>
         </div>
     </header>
+    <div id="chartdiv"></div>
 
-    <section class="Funcionalidades">
-        <div class="conteiner">
-            <div class="Funcionalidades-text"></div>
-            <div class="Funcionalidades-Funcionalidades-img"></div>
-            <h3>Funcionalidades</h3>
-            <p>Quer saber a diferença do nosso app, para a concorrencia? </p>
-            <a href="funcionalidade.html" class="btn animate-btn">Clique aqui</a>
+    <div id="div-focos-bioma" class="estatistica">
+        <div>
+            <span class="titulo">Focos por bioma</span>
+            <ul class="inline">
+                <li title="Anual" onclick="changeTable('box-bioma','ano_atual')"><i class="fas fa-calendar img_ano_atual"></i></li>
+                <li title="Mensal" onclick="changeTable('box-bioma','mes_atual')"><i class="fas fa-calendar-alt img_mes_atual"></i></li>
+                <li title="Últimas 48 horas" onclick="changeTable('box-bioma','48h')"><i class="fas fa-calendar-day img_48h"></i></li>
+                <li></li>
+                <li title="Exibir Tabela" onclick="changeTable('box-bioma',null,'tabela')"><i class="fas fa-table img_tabela"></i></li>
+                <li title="Exibir Gráfico em pizza" onclick="changeTable('box-bioma',null,'pizza')"><i class="fas fa-chart-pie img_pizza"></i></li>
+                <li title="Exibir Gráfico em barra" onclick="changeTable('box-bioma',null,'barra')"><i class="fas fa-chart-bar img_barra"></i></li>
+            </ul>
         </div>
-        <div class="funcionalidades-img">
-            <img src="img/ferramenta.png" alt="" />
-        </div>
-    </section>
-    <section class="suporte">
-        <div class="conteiner">
-            <div class="suporte-img">
-                <img src="img/suporte-sem.png" alt="" />
-            </div>
-            <div class="suporte-text"></div>
-            <h3>Suporte</h3>
-            <p>Temos suporte 24hrs, em varias plataformas digitais</p>
-            <a href="suporte.html" class="btn animate-btn">Suporte</a>
-        </div>
-    </section>
+        <span class="descTempo">PERÍODO ANUAL: 2019</span>
+        <iframe id="focos-bioma"></iframe>
+    </div>
+
     <section class="sobre-nos">
         <div class="conteiner">
             <h3>Nossa Equipe</h3>
