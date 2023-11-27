@@ -1,3 +1,4 @@
+/**validar email e senha */
 function validateFields() {
     const email = document.getElementById("email").value;
 }if (!email) {
