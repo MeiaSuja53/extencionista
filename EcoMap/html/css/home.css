@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #5C0000;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 100%;
+}
+
+h3 {
+    font-size: 50px;
+    color: #27A300;
+}
+
+p {
+    color: #ECFFEB
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color:#751717;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+    transition: 0,9s;
+}
+
+.btn:hover {
+    background-color:#2D661B;
+    
+}
+
+@keyframes animete-outline {
+    from {
+        outline: 0px solid red;
+    }
+
+    to {
+        outline: 15px solid red;
+    }
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+    
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.navA{
+    width: 8vw;
+    height: 8vw;
+}
+
+
+nav ul a {
+    color: #0dff00;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+
+nav ul a:hover {
+    color: #FF0000;
+}
+
+nav ul a:not(.btn)::after {
+    content: "";
+    background-color: #27A300;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 80%;
+}
+
+/*menu mobile*
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+nav .fechar-icon {
+    display: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+@media(max-width: 830px) {
+
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba((136, 132, 132, 0.158)103)(131, 128, 128);
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.9s;
+    }
+}
+
+.ul .open {
+    clip-path: circle(0% at 100% 0);
+}
+
+.ul a {
+    margin: 10px;
+    font-size: 16px;
+}
+
+nav .menu-icon {
+    display: block;
+}
+/*fim menu mobile*/
+/*pag home*/
+.banner {
+    display: flex;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text {
+    margin: 50px auto 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.Funcionalidades .conteiner-Funcionalidades {
+    display: flex;
+    align-items: center;
+}
+
+.Funcionalidades .Funcionalidades-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.Funcionalidades .Funcionalidades-text h3 {
+    font-size: 56px;
+}
+
+.Funcionalidades .Funcionalidades-text p {
+    margin: 5px 0 10px o;
+}
+
+.Funcionalidades .Funcionalidades-img {
+    width: 50%;
+}
+
+.Funcionalidades .Funcionalidades-img img {
+    width: 100%;
+}
+
+.sobre-nos h3 {
+    text-align: center;
+}
+
+.sobre-nos p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+}
+
+.cards .card-itens {
+    background-color: #005C00;
+    margin: 15px;
+    border-radius: 13px;
+    text-align: center;
+    width: 350px;
+    transition: 1.0s;
+}
+
+.cards .card-itens img {
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.sobre-nos .card-itens .name-dev {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.9s;
+}
+
+.sobre-nos .card-itens .funcao-um p {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.sobre-nos .card-itens:hover {
+    background-color: #5C0000;
+    margin-top: -5px;
+}
+
+.sobre-nos .card-itens:hover .name-dev,
+.sobre-nos .card-itens:hover .funcao-um p {
+    color: #00ff00
+}
+/*fim pag home*/
+/*pagina funcionalidades*/
+
+.melancia h4{
+    text-align: center;
+    
+}
+.melancia .caixa > p{
+    text-align: center;
+    
+}
+.melancia .todos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.melancia .todos-itens{
+    background-color: #212121;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+/*fim pagina funcionalidades*/
+/*pagina suporte*/
+.contato{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contato .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin-right: 50px;
+    height: fit-content;
+}
+.left-side p{
+    color: #5C0000;
+}
+.contato .right-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contato .right-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: blue;
+}
+.contato .right-side div p{
+    font-size: 18px;
+    color: pink;
+}
+.contato .right-side{
+    width: 50%;
+}
+.contato .right-side input{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5;
+    border: 1px solid #39f22f;
+    color: #5C0000;
+    font-weight: 830px;
+}
+h6{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 45px;
+}
+.pzim {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 25px;
+}
+.contato .right-side input:focus,
+.contato .right-side textarea:focus{
+    border-color: blue;
+}
+.contato .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #000000;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.8;
+    resize: none;
+}
+.contato .right-side button{
+    border: none;
+    padding: 20px;
+}
+/*footer geral*/
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer i {
+    color: bisque;
+    font-size: 19px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer-img{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}
+
+.copizin{
+    width: 100%;
+}
+
+.copizin .copizin.p{
+    font-size: 15px;
+    color: white;  
+    width: 100vw; 
+
+}

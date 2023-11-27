@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/log.js">
+    <title>EcoMap</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Criar uma conta</h1>
+                <span>Faça o seu cadastro</span>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button><a href="home.html" class="solid" disabled="true"> Iniciar Seção </a></button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Entrar</h1>
+                <span>Bem vindo de volta!</span>
+                <input type="email" placeholder="Email" id="email" onchange="validateFields()">
+                <input type="password" placeholder="Senha">
+                <button><a href="home.html" class="solid" disabled="true"> Entrar </a></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Vai faz o cadastro ai, vai</h1>
+                    <p></p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Não tem cadastro?</h1>
+                    <p>Não tem problema! Faça o seu cadastro agora mesmo, para acessar o nosso
+                        site e ter acesso aos nossos serviços</p>
+                    <button class="hidden" id="register">cadastro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
